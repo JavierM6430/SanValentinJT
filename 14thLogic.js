@@ -84,9 +84,22 @@ botonStop.addEventListener('click', () => {
     pauseMusic();
 })
 
-audio.addEventListener('timeupdate', () => {
-    if (indexLetra < letras.length && audio.currentTime >= letras[indexLetra].time) {
-        lyricsLetra.innerHTML += `<p>${letras[indexLetra].text}</p>`;
-        indexLetra++
+// audio.addEventListener('timeupdate', () => {
+//     
+// });
+
+// audio.addEventListener("timeupdate", () => {    
+//     if (indexLetra < letras.length && audio.currentTime >= letras[indexLetra].time) { 
+//         lyricsLetra.innerHTML += `<div>${letras[indexLetra].text}</div>`;
+//         indexLetra++
+//     }
+// });
+
+audio.addEventListener("timeupdate", () => {
+    console.log(`Tiempo actual: ${audio.currentTime}, Próxima línea en: ${letras[indexLetra]?.time}`);
+    if (indexLetra < letras.length && audio.currentTime >= letras[indexLetra].time) { 
+        console.log(`Mostrando: ${letras[indexLetra].text}`);
+        lyricsLetra.insertAdjacentHTML("beforeend", `<div>${letras[indexLetra].text}</div>`);
+        indexLetra++;
     }
 });
