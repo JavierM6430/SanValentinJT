@@ -487,7 +487,67 @@ body {
     opacity: 1;
 }
 
-.backgrounds-final {
+.title-ai {
+    text-align: center;
+    font-family: "Taprom", serif;
+    color: #ecd1a8;
+    font-weight: 100;
+    font-size: 1.5rem;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.card-reproductor {
+    background-color: #ecd1a8;
+    width: 350px;
+    height: 325px;
+    margin: 0 auto;
+    border-radius: 13px;
+}
+
+.head-card {
+    display: flex;
+}
+
+.image-music {
+    width: 40px;
+    border-radius: 10px;
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.title-music {
+    font-family: "Timmana", serif;
+    font-weight: 100;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+.lyrics {
+    width: 300px;
+    height: 170px;
+    margin: 0 auto;
+    font-family: "Timmana", serif;
+    font-size: 2rem;
+    line-height: 40px;
+    color: #000;
+}
+
+.buttons-music {
+    display: flex;
+    justify-content: center;
+}
+
+.buttons-music button {
+    padding: 5px 10px 5px 10px;
+    font-size: 2rem;
+    margin: 20px 10px 25px 10px;
+    border-radius: 10%;
+}
+
+.section-final {
+    margin-top: 80px;
     display: flex;
     flex-wrap: wrap;
 }
@@ -583,7 +643,7 @@ body {
 }
 
 .cora-beige {
-    margin-bottom: 0px;
+    margin-bottom: 63px;
     color: #ecd1a8;
 }
 
