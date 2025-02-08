@@ -3,7 +3,8 @@ const message = document.getElementById('typingText');
 // HEADER
 const audio = document.getElementById('music');
 const botonPlay = document.getElementById('btn-play');
-const botonStop = document.getElementById('btn-pause');
+const botonPause = document.getElementById('btn-pause');
+const botonStop = document.getElementById('btn-stop');
 const lyricsLetra = document.getElementById('lyrics');
 // REPRODUCTOR DE MÚSICA
 const btnBonus = document.getElementById('boton-bonus');
@@ -84,10 +85,17 @@ btnBonus.addEventListener('click', () => {
 
 botonPlay.addEventListener('click', () => {
     playMusic();
-})
+});
+
+botonPause.addEventListener('click', () => {
+    pauseMusic();
+});
 
 botonStop.addEventListener('click', () => {
-    pauseMusic();
+    audio.pause();
+    audio.currentTime = 0;
+    lyricsLetra.textContent = "";
+    indexPartes = 0;
 })
 
 let indexPartes = 0;
@@ -101,6 +109,11 @@ audio.addEventListener("play", () => {
 
             if (part && currentTime >= part.time) {
                 lyricsLetra.textContent = part.text;
+
+                lyricsLetra.classList.remove("slide-down"); // Limpiar la animación anterior
+                void lyricsLetra.offsetWidth; // Forzar reflujo para reiniciar la animación
+                lyricsLetra.classList.add("slide-down"); // Activar la animación
+
                 indexPartes++;
             }
 
@@ -124,8 +137,8 @@ audio.addEventListener("ended", () => {
     lyricsLetra.textContent = "";
     clearInterval(intervalId);
     intervalId = null;
+    audio.play();
 });
-
 
 // audio.addEventListener('timeupdate', () => {
 //     if (indexPartes < letras.length && audio.currentTime >= letras[indexPartes].time) {
