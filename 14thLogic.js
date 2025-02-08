@@ -50,11 +50,19 @@ playMusic = () => {
 
 pauseMusic = () => {
     audio.pause();
-    clearInterval(interval)
+    clearInterval(intervalo)
 }
 
-startLyrics = () => {
-
+typeLyrics = (text) => {
+    let i = 0
+    let inverval = setInterval(() => {
+        if (i <= text.length) {
+            lyricsLetra.textContent += text[i];
+            i++
+        } else {
+            clearInterval(inverval);
+        }
+    }, 80)
 }
 
 // Array con los títulos del header
@@ -62,12 +70,10 @@ const titulo = ["Felíz San Valentín amor!❤️", "Felíz aniversario bba!❤�
 
 // Objeto con el tiempo y la letra de la canción
 let letras = [
-    { time: 2, text: "Esta es la primera línea de la canción..."},
-    { time: 5, text: "segunda fraseeeeeeee..."},
-    { time: 10, text: "tercera frase de la musica"}
+    { time: 0.2, text: "no con cualquiera\n quiero despertar, solo\n con usted, con usted, \n yo bailo con usted"},
+    { time: 6.8, text: "na ma con usted, un \nbeso donde estes, \ndonde estes bbe"},
+    { time: 11.4, text: "no, no te puedo borrar, \ntu, me enseñaste a \nquerer, me enseñaste a \nbailar"},
 ]
-
-let indexLetra = 0;
 
 writing();
 
@@ -84,22 +90,52 @@ botonStop.addEventListener('click', () => {
     pauseMusic();
 })
 
-// audio.addEventListener('timeupdate', () => {
-//     
-// });
+let indexPartes = 0;
+let intervalId = null;
 
-// audio.addEventListener("timeupdate", () => {    
-//     if (indexLetra < letras.length && audio.currentTime >= letras[indexLetra].time) { 
-//         lyricsLetra.innerHTML += `<div>${letras[indexLetra].text}</div>`;
-//         indexLetra++
-//     }
-// });
+audio.addEventListener("play", () => {
+    if (!intervalId) { // Evita múltiples intervalos
+        intervalId = setInterval(() => {
+            let currentTime = audio.currentTime;
+            let part = letras[indexPartes];
 
-audio.addEventListener("timeupdate", () => {
-    console.log(`Tiempo actual: ${audio.currentTime}, Próxima línea en: ${letras[indexLetra]?.time}`);
-    if (indexLetra < letras.length && audio.currentTime >= letras[indexLetra].time) { 
-        console.log(`Mostrando: ${letras[indexLetra].text}`);
-        lyricsLetra.insertAdjacentHTML("beforeend", `<div>${letras[indexLetra].text}</div>`);
-        indexLetra++;
+            if (part && currentTime >= part.time) {
+                lyricsLetra.textContent = part.text;
+                indexPartes++;
+            }
+
+            if (indexPartes >= letras.length) {
+                clearInterval(intervalId);
+                intervalId = null;
+            }
+        }, 100);
     }
 });
+
+audio.addEventListener("pause", () => {
+    if (intervalId) {
+        clearInterval(intervalId);
+        intervalId = null;
+    }
+});
+
+audio.addEventListener("ended", () => {
+    indexPartes = 0;
+    lyricsLetra.textContent = "";
+    clearInterval(intervalId);
+    intervalId = null;
+});
+
+
+// audio.addEventListener('timeupdate', () => {
+//     if (indexPartes < letras.length && audio.currentTime >= letras[indexPartes].time) {
+//         lyricsLetra.textContent = "";
+//         typeLyrics(letras[indexPartes].text);
+//         indexPartes++
+//     }
+// })
+
+// audio.addEventListener('ended', () => {
+//     lyricsLetra.textContent = "";
+//     indexPartes = 0;  
+// })
