@@ -24,61 +24,40 @@ html, body {
 
 body {
     background: #03032e;
-    background-attachment: fixed; /* Hace que el fondo no se repita y se mantenga fijo al hacer scroll */
-    background-size: cover; /* Asegura que el fondo cubra toda la página */
-    min-height: 100%; /* El fondo se extiende al tamaño total de la página */
 }
 
 .header {
-    width: 100vw;
+    background-image: url(CartaPrincipal/Portada-mundial.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 45vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     /* max-width: 550px; */
 }
 
-.imagen-header {
-    height: 100%;
-    width: 100vw;
-}
-
-@keyframes blink {
-    0% {
-        border-color: transparent;
-    }
-    50% {
-        border-color: rgb(255, 255, 255);
-    }
-    100% {
-        border-color: transparent;
-    }
-}
-
 #typingText {
-    position: absolute;
+    margin-top: 100px;
     color: #fff;
     text-shadow: 3px 3px 1px #0c0133;
     font-weight: 500;
-    top: 170px;
-    left: 25px;
-    margin-right: 50px;
-    margin-left: 70px;
     font-size: 1.5rem;
     font-family: "Afacad", serif;
-    border-right: 3px solid;
-    display: inline-block;
-    white-space: nowrap;
-    overflow: hidden;
-    animation: blink 0.8s step-end infinite;
+    display: block;
 }
 
 .number-five {
-    width: 10px;
     color: #fff;
     font-size: 3.5rem;
     font-family: "Tourney", serif;
     text-shadow: 3px 2px 2px #e70971;
     font-weight: 300;
-    margin: 0 auto;
-    padding: 30px;
-    
+    padding: 45px;
+    width: fit-content; /* Se ajusta al tamaño del texto */
+    margin: 0 auto; /* Centra horizontalmente */
+    text-align: center;
 }
 
 .carta {
@@ -493,15 +472,14 @@ body {
     font-family: "Taprom", serif;
     color: #ecd1a8;
     font-weight: 100;
-    font-size: 1.5rem;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    font-size: 2rem;
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 
 .card-reproductor {
     background-color: #ecd1a8;
-    width: 350px;
-    height: 325px;
+    width: 80vw;
     margin: 0 auto;
     border-radius: 13px;
 }
@@ -691,7 +669,7 @@ body {
 
 @media (max-width: 320px) {
     .header {
-        width: 450px; 
+        width: 100vw; 
     }
 
     .imagen-header {
@@ -699,54 +677,157 @@ body {
     }
 
     .number-five {
-        position: relative;
-        left: 55px;
+        text-align: center;
+    }
+
+    .rosa-1, .rosa-2,.rosa-3, .rosa-4,
+    .rosa-5, .rosa-6, .rosa-7, .rosa-8,
+    .tallo-corto, .tallo-corto-2,
+    .tallo-corto-3, .tallo-corto-4,
+    .tallo-grande-1, .tallo-grande-2,
+    .tallo-grande-3, .tallo-largo-1,
+    .tallo-largo-2 {
+        display: none;
+    }
+
+    .carta, .carta-right {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
     }
 
     .subtitle-carta {
-        margin-left: 15px;
-        margin-right: 5px;
-        width: 210px;
-        font-size: 1.8rem;
+        margin-left: 50px;
+        margin-right: 50px;
+        margin-bottom: 20px;
+        text-align: center;
+        font-size: 2rem;
     }
 
     .parrafo-carta {
-        font-size: 1rem;
-        margin-left: 25px;
-        margin-right: 25px;
+        margin-left: 40px;
+        margin-right: 40px;
+        margin-bottom: 20px;
+        font-size: 1.5rem;
     }
 
-    .carta-right {
-        flex-direction: row-reverse;
-        position: relative;
-        left: 130px;
+    .format-photo {
+        margin: 0 auto;
+        background: #fff; 
     }
 
     .background-beige {
-        width: 450px;
+        width: 100vw;
     }
 
     .title-line-time {
-        font-size: 3rem;
+        font-size: 2rem;
+    }
+
+    .cartas-time {
+        margin: 0 auto;
+    }
+
+    .carta-time {
+        background-color: #96305a;
+        width: 80vw;
+        margin-bottom: 50px;
+    }
+
+    .circle, .center-line {
+        display: none;
+    }
+    
+    .triangle {
+        top: -5px;
+        left: 20px;
+        width: 20px;
+        height: 20px;
+    }
+
+    .date {
+        left: 40px;
     }
 
     .title-carta {
-        font-size: 1.5rem;
+        font-size: 2rem;
+    }
+
+    .image-time-fix, .image-time-fix-2 {
+        margin-left: 40px;
+        height: 130px;
+    }
+    
+    .image-time-fix-3 {
+        margin-left: 50px;
+    }
+
+    .fix-colon {
+        width: 100px;
+        margin-left: 70px;
+    }
+
+    .inc-left, .inc-right {
+        transform: rotate(0deg);
+        width: 80px;
+    }
+
+    .fix-margin {
+        margin-left: 40px;
+    }
+
+    .egre-fix-2 {
+        margin-left: 80px;
     }
 
     .parrafo-time {
-        font-size: 1.5rem;
+        font-size: 1.2rem;
     }
 
     .date {
         font-size: 1.5rem;
     }
 
-    .center-line {
-        height: 2370px;
+    .boton-bonus {
+        display: none;
     }
 
-    .boton-bonus {
-        top: 5070px;
+    .carta-bonus {
+        display: none;
     }
+
+    .title-ai {
+        font-size: 2rem;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .card-reproductor {
+        width: 90vw;
+        margin: 0 auto;
+    }
+
+    #lyrics {
+        width: 80%;
+        height: 50%;
+        margin: 0 auto;
+        font-size: 2rem;
+        line-height: 40px;
+    }
+
+    .section-final {
+        padding-top: 70px;
+        margin: 0 auto;
+        width: 90%;
+    }
+
+    .parrafo-final-beige {
+        margin-bottom: 150px;
+    }
+
+    .image-final-2 {
+        margin-top: 30px;
+        width: 90%;
+    }
+  
 }
