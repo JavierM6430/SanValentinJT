@@ -30,7 +30,7 @@ body {
     background-image: url(CartaPrincipal/Portada-mundial.jpg);
     background-size: cover;
     background-position: center;
-    width: 100%;
+    width: 100vw;
     height: 45vh;
     display: flex;
     justify-content: center;
@@ -305,7 +305,7 @@ body {
 
 .carta-time {
     background-color: #96305a;
-    width: 357px;
+    width: 78vw;
     margin-top: 20px;
     border-radius: 10px;
     margin-bottom: 45px;
@@ -333,20 +333,20 @@ body {
 }
 
 .image-time {
-    width: 70px;
+    width: 20%;
     border-radius: 10px;
     margin-left: 10px;
 }
 
 .image-time-fix {
+    height: 120px;
     width: 80px;
     border-radius: 10px;
-    height: 120px;
     margin-left: 10px;
 }
 
 .image-time-fix-2 {
-    width: 74px;
+    width: 20%;
     border-radius: 10px;
     height: 120px;
     margin-left: 20px;
@@ -421,14 +421,6 @@ body {
     margin-left: 3px;
 }
 
-.inc-left {
-    transform: rotate(358deg);
-}
-
-.inc-right {
-    transform: rotate(8deg);
-}
-
 .parrafo-time {
     text-align: center;
     font-family: "Afacad", serif;
@@ -441,7 +433,7 @@ body {
 .boton-bonus {
     position: absolute;
     font-size: 2.5rem;
-    top: 4258px;
+    top: 4345px;
     left: 5px;
     text-align: center;
     line-height: 55px;
@@ -504,8 +496,8 @@ body {
 }
 
 #lyrics {
-    width: 300px;
-    height: 170px;
+    width: 80%;
+    height: 50%;
     margin: 0 auto;
     font-family: "Timmana", serif;
     font-size: 2rem;
@@ -667,13 +659,9 @@ body {
     margin-top: 60px;
 }
 
-@media (max-width: 320px) {
+@media (max-width: 380px) {
     .header {
         width: 100vw; 
-    }
-
-    .imagen-header {
-        width: 100%;
     }
 
     .number-five {
@@ -726,6 +714,10 @@ body {
 
     .cartas-time {
         margin: 0 auto;
+    }
+
+    .fix-margin-1 {
+        margin-left: 40px;
     }
 
     .carta-time {
@@ -821,13 +813,22 @@ body {
         width: 90%;
     }
 
-    .parrafo-final-beige {
-        margin-bottom: 150px;
+    .beige, .bordo {
+        width: 46%;
+        height: 60vh;
+    }
+
+    .final-1, .final-2 {
+        margin-bottom: 14%;
     }
 
     .image-final-2 {
-        margin-top: 30px;
-        width: 90%;
+        margin-top: 20px;
+        width: 80%;
+    }
+
+    .image-final {
+        width: 100%;
     }
   
 }
