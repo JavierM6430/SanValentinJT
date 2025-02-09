@@ -31,7 +31,8 @@ body {
     background-size: cover;
     background-position: center;
     width: 100vw;
-    height: 45vh;
+    height: 28vh;
+    max-height: 35vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -433,7 +434,7 @@ body {
 .boton-bonus {
     position: absolute;
     font-size: 2.5rem;
-    top: 4345px;
+    top: 4360px;
     left: 5px;
     text-align: center;
     line-height: 55px;
