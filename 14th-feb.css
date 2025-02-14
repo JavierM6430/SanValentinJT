@@ -69,8 +69,8 @@ body {
 }
 
 .format-photo {
-    display: flex;
-    justify-content: center;
+    /* display: flex;
+    justify-content: center; */
     background: #fff;
     width: 200px;
     height: 255px;
@@ -660,7 +660,161 @@ body {
     margin-top: 60px;
 }
 
-@media (max-width: 380px) {
+@media (width <= 360px) {
+    .header {
+        width: 100vw;
+        height: 40vh;
+        max-height: 45vh;
+    }
+
+    .carta {
+        display: flex;
+        justify-content: center;
+        width: 95%;
+        margin: 0 auto;
+        padding-bottom: 10vh;
+    }
+    
+    .format-photo {
+        width: 50%;
+        height: 70%;
+        padding-top: 1vh;
+        padding-bottom: 6vh;
+        margin-left: 0;
+    }
+    
+    .image-carta {
+        width: 38vw;
+        height: 30vh;
+    }
+    
+    .subtitle-carta {
+        font-size: 1.3rem;
+        margin-left: 3vw;
+        margin-right: 3vw;
+    }
+    
+    .parrafo-carta {
+        font-size: 0.9rem;
+        margin-top: 1vh;
+        margin-left: 3vw;
+        margin-right: 3vw;
+    }
+
+    .image-carta-fix {
+        width: 38vw;
+        height: 30vh;
+    }
+
+    .rosa-1, .rosa-2,.rosa-3, .rosa-4,
+    .rosa-5, .rosa-6, .rosa-7, .rosa-8,
+    .tallo-corto, .tallo-corto-2,
+    .tallo-corto-3, .tallo-corto-4,
+    .tallo-grande-1, .tallo-grande-2,
+    .tallo-grande-3, .tallo-largo-1,
+    .tallo-largo-2 {
+        display: none;
+    }
+
+    .line-time {
+        max-width: 95vw;
+    }
+
+    .center-line {
+        display: none;
+    }
+
+    .circle {
+        position: relative;
+        font-size: 1.3rem;
+        top: 4vh;
+        left: -18vw;
+        line-height: 7vh;
+        width: 10vw;
+        height: 6.5vh;
+    }
+
+    .triangle {
+        width: 7vw;
+        height: 4.5vh;
+        left: -3vw;
+        top: 5vh;
+    }
+
+    .carta-time {
+        position: relative;
+        width: 78vw;
+        margin-top: 6vh;
+        margin-left: 20vw;
+    }
+
+    .date {
+        top: -12vh;
+    }
+
+    .title-carta {
+        font-size: 1.6rem;
+        margin-top: -9vh;
+        margin-bottom: 1vh;
+        line-height: 6vh;
+    }
+
+    .parrafo-time {
+        font-size: 0.9rem;
+        margin: 1vh 2vw 0 2vw;
+        padding-bottom: 10px;
+    }
+
+    .image-time {
+        height: 18vh;
+        width: 22%;
+        margin-left: 0;
+    }
+    
+    .image-time-fix {
+        height: 18vh;
+        width: 22%;
+        margin-left: 3vw;
+    }
+
+    .image-time-fix-2 {
+        height: 18vh;
+        width: 24%;
+        margin-left: 19vw;
+        margin-right: 1vw;
+    }
+    
+    .image-time-fix-3 {
+        width: 65%;
+        margin-left: 14vw;
+    }
+
+    .image-time-fix-4 {
+        width: 35%;
+        margin-left: 6.5vw;
+    }
+
+    .fix-colon {
+        margin-left: 0;
+    }
+
+    .maddy-fix {
+        height: 18vh;
+        width: 25%;
+        margin-left: 3vw;
+    }
+
+    .maddy-fix-2 {
+        position: none;
+        margin-left: 0;
+    }
+
+    .maddy-height {
+        height: 15vh;
+    }
+}
+
+/* @media (max-width: 380px) {
     .header {
         width: 100vw; 
     }
@@ -832,4 +986,4 @@ body {
         width: 100%;
     }
   
-}
+} */
