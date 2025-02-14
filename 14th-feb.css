@@ -669,219 +669,6 @@ body {
     margin-top: 60px;
 }
 
-@media (361px <= width <= 450px) {
-    .header {
-        width: 100vw;
-        height: 40vh;
-        max-height: 45vh;
-    }
-
-    .carta {
-        display: flex;
-        justify-content: center;
-        width: 95%;
-        margin: 0 auto;
-        padding-bottom: 10vh;
-    }
-    
-    .format-photo {
-        height: 70%;
-        margin-left: 0;
-    }
-
-    .image-carta {
-        width: 42vw;
-        height: 35vh;
-    }
-    
-    .subtitle-carta {
-        font-size: 1.5rem;
-        margin-left: 0.5vw;
-        margin-right: 0.5vw;
-    }
-
-    .parrafo-carta {
-        font-size: 1rem;
-        margin-top: 1vh;
-        margin-left: 2vw;
-        margin-right: 2vw;
-    }
-
-    .image-carta-fix {
-        width: 42vw;
-        height: 35vh;
-    }
-
-    .rosa-1, .rosa-2,.rosa-3, .rosa-4,
-    .rosa-5, .rosa-6, .rosa-7, .rosa-8,
-    .tallo-corto, .tallo-corto-2,
-    .tallo-corto-3, .tallo-corto-4,
-    .tallo-grande-1, .tallo-grande-2,
-    .tallo-grande-3, .tallo-largo-1,
-    .tallo-largo-2 {
-        display: none;
-    }
-
-    .line-time {
-        max-width: 95vw;
-    }
-
-    .center-line {
-        display: none;
-    }
-
-    .circle {
-        font-size: 1.5rem;
-        top: 4vh;
-        left: -17vw;
-        line-height: 8vh;
-        width: 11vw;
-        height: 7.5vh;
-    }
-
-    .triangle {
-        max-width: 9vw;
-        width: 8vw;
-        height: 5.5vh;
-        left: -3vw;
-        top: 5vh;
-    }    
-
-    .carta-time {
-        width: 80vw;
-        margin-left: 18vw;
-    }
-
-    .title-carta {
-        font-size: 2rem;
-        line-height: 6vh;
-        margin: -2vh 2vw 1vh 2vw;
-    }
-
-    .parrafo-time {
-        font-size: 1rem;
-        margin: 1vh 2vw 0 2vw;
-    }
-
-    .image-time {
-        height: 19vh;
-        width: 23%;
-        margin-left: 0;
-    }
-    
-    .image-time-fix {
-        height: 19vh;
-        width: 23%;
-        margin-left: 1.5vw;
-    }
-
-    .image-time-fix-2 {
-        height: 23vh;
-        width: 27%;
-        margin-left: 16vw;
-        margin-right: 2vw;
-    }
-
-    .argentina img:nth-of-type(2) {
-        height: 23vh;
-        width: 27%;
-    }
-    
-    .image-time-fix-3 {
-        width: 65%;
-        margin-left: 14vw;
-    }
-
-    .image-time-fix-4 {
-        width: 38%;
-        height: 23vh;
-        margin-left: 2vw;
-    }
-
-    .fix-colon {
-        height: 23vh;
-        width: 27%;
-        margin-left: 0;
-    }
-
-    .colon img:nth-of-type(2) {
-        height: 23vh;
-        width: 27%;
-    }
-
-    .maddy-fix {
-        height: 20vh;
-        width: 28%;
-        margin-left: 2vw;
-    }
-
-    .maddy-fix-2 {
-        position: none;
-        margin-right: 0;
-        margin-left: 0;
-    }
-
-    .maddy-height {
-        height: 16.5vh;
-        margin-right: 0;
-    }
-
-    .egre-fix {
-        height: 22vh;
-        width: 30%;
-    }
-
-    .fix-margin {
-        margin-left: 3vw;
-    }
-
-    .boton-bonus {
-        line-height: 8.5vh;
-        width: 11.5vw;
-        min-width: 11.5vw;
-        height: 8vh;
-        min-height: 8vh;
-    }
-
-    .card-bonus {
-        position: relative;
-    }
-
-    .title-carta-bonus {
-        font-family: "Timmana", serif;
-        font-size: 2rem;
-        font-weight: 300;
-        color: #ecd1a8;
-        text-align: center;
-        margin-top: -15px;
-        margin-bottom: 5px;
-    }
-
-    .image-time-fix-5 {
-        height: 19vh;
-        width: 23%;
-        margin-left: 0;
-    }
-
-    .image-time-fix-6 {
-        position: relative;
-        top: -1.5vh;
-        height: 19vh;
-        width: 23%;
-        margin-left: 0;
-    }  
-
-    .carta-bonus img:nth-of-type(1) {
-        margin-left: 1.5vw;
-    }
-
-    .carta-bonus {
-        margin-top: -11vh;
-    }
-
-
-}
-
 @media (width <= 360px) {
     .header {
         width: 100vw;
@@ -1132,5 +919,259 @@ body {
 
     .cora-beige {
         margin-bottom: 10vh;
+    }
+}
+
+@media (361px <= width <= 470px) {
+    .header {
+        width: 100vw;
+        height: 40vh;
+        max-height: 45vh;
+    }
+
+    .carta {
+        display: flex;
+        justify-content: center;
+        width: 95%;
+        margin: 0 auto;
+        padding-bottom: 10vh;
+    }
+    
+    .format-photo {
+        height: 70%;
+        margin-left: 0;
+    }
+
+    .image-carta {
+        max-width: 170px;
+        width: 42vw;
+        height: 35vh;
+    }
+    
+    .subtitle-carta {
+        font-size: 1.5rem;
+        margin-left: 0.5vw;
+        margin-right: 0.5vw;
+    }
+
+    .parrafo-carta {
+        font-size: 1rem;
+        margin-top: 1vh;
+        margin-left: 2vw;
+        margin-right: 2vw;
+    }
+
+    .image-carta-fix {
+        width: 42vw;
+        height: 35vh;
+    }
+
+    .rosa-1, .rosa-2,.rosa-3, .rosa-4,
+    .rosa-5, .rosa-6, .rosa-7, .rosa-8,
+    .tallo-corto, .tallo-corto-2,
+    .tallo-corto-3, .tallo-corto-4,
+    .tallo-grande-1, .tallo-grande-2,
+    .tallo-grande-3, .tallo-largo-1,
+    .tallo-largo-2 {
+        display: none;
+    }
+
+    .line-time {
+        max-width: 95vw;
+    }
+
+    .center-line {
+        display: none;
+    }
+
+    .circle {
+        font-size: 1.5rem;
+        top: 4vh;
+        left: -17vw;
+        line-height: 8vh;
+        width: 11vw;
+        height: 7.5vh;
+    }
+
+    .triangle {
+        max-width: 9vw;
+        width: 8vw;
+        height: 5.5vh;
+        left: -3vw;
+        top: 5vh;
+    }    
+
+    .carta-time {
+        width: 80vw;
+        margin-left: 18vw;
+    }
+
+    .title-carta {
+        font-size: 2rem;
+        line-height: 6vh;
+        margin: -2vh 2vw 1vh 2vw;
+    }
+
+    .parrafo-time {
+        font-size: 1rem;
+        margin: 1vh 2vw 0 2vw;
+    }
+
+    .image-time {
+        height: 19vh;
+        width: 23%;
+        margin-left: 0;
+    }
+    
+    .image-time-fix {
+        height: 19vh;
+        width: 23%;
+        margin-left: 1.5vw;
+    }
+
+    .image-time-fix-2 {
+        height: 23vh;
+        width: 27%;
+        margin-left: 16vw;
+        margin-right: 2vw;
+    }
+
+    .argentina img:nth-of-type(2) {
+        height: 23vh;
+        width: 27%;
+    }
+    
+    .image-time-fix-3 {
+        width: 65%;
+        margin-left: 14vw;
+    }
+
+    .image-time-fix-4 {
+        width: 38%;
+        height: 23vh;
+        margin-left: 2vw;
+    }
+
+    .fix-colon {
+        height: 23vh;
+        width: 27%;
+        margin-left: 0;
+    }
+
+    .colon img:nth-of-type(2) {
+        height: 23vh;
+        width: 27%;
+    }
+
+    .maddy-fix {
+        height: 20vh;
+        width: 28%;
+        margin-left: 2vw;
+    }
+
+    .maddy-fix-2 {
+        position: none;
+        margin-right: 0;
+        margin-left: 0;
+    }
+
+    .maddy-height {
+        height: 16.5vh;
+        margin-right: 0;
+    }
+
+    .egre-fix {
+        height: 22vh;
+        width: 30%;
+    }
+
+    .fix-margin {
+        margin-left: 3vw;
+    }
+
+    .boton-bonus {
+        line-height: 8.5vh;
+        width: 11.5vw;
+        min-width: 11.5vw;
+        height: 8vh;
+        min-height: 8vh;
+    }
+
+    .card-bonus {
+        position: relative;
+    }
+
+    .title-carta-bonus {
+        font-family: "Timmana", serif;
+        font-size: 2rem;
+        font-weight: 300;
+        color: #ecd1a8;
+        text-align: center;
+        margin-top: -15px;
+        margin-bottom: 5px;
+    }
+
+    .image-time-fix-5 {
+        height: 19vh;
+        width: 23%;
+        margin-left: 0;
+    }
+
+    .image-time-fix-6 {
+        position: relative;
+        top: -1.5vh;
+        height: 19vh;
+        width: 23%;
+        margin-left: 0;
+    }  
+
+    .carta-bonus img:nth-of-type(1) {
+        margin-left: 1.5vw;
+    }
+
+    .carta-bonus {
+        margin-top: -11vh;
+    }
+}
+
+@media (471px <= width <= 500px) {
+    .header {
+        width: 100vw;
+        height: 45vh;
+        max-height: 45vh;
+    }
+
+    .number-five {
+        font-size: 5rem;
+    }
+
+    .carta {
+        display: flex;
+        justify-content: center;
+        width: 440px;
+        margin: 0 auto;
+        padding-bottom: 10vh;
+    } 
+    
+    .format-photo {
+        height: 70%;
+        margin-left: 0;
+    }
+
+    .image-carta-fix {
+        height: 42vh;
+    }
+
+    .subtitle-carta {
+        font-size: 2rem;
+        margin-left: 1vw;
+        margin-right: 1vw;
+    }
+
+    .parrafo-carta {
+        font-size: 1.2rem;
+        margin-top: 1vh;
+        margin-left: 2vw;
+        margin-right: 2vw;
     }
 }
