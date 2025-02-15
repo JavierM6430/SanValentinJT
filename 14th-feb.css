@@ -929,6 +929,10 @@ body {
         max-height: 45vh;
     }
 
+    .number-five {
+        font-size: 5rem;
+    }
+
     .carta {
         display: flex;
         justify-content: center;
@@ -938,32 +942,32 @@ body {
     }
     
     .format-photo {
-        height: 70%;
+        width: 50%;
+        height: 75%;
         margin-left: 0;
     }
 
     .image-carta {
-        max-width: 170px;
-        width: 42vw;
-        height: 35vh;
+        width: 46vw;
+        height: 30vh;
     }
     
     .subtitle-carta {
-        font-size: 1.5rem;
-        margin-left: 0.5vw;
-        margin-right: 0.5vw;
+        font-size: 1.7rem;
+        margin-left: 1vw;
+        margin-right: 1vw;
     }
 
     .parrafo-carta {
-        font-size: 1rem;
+        font-size: 1.2rem;
         margin-top: 1vh;
         margin-left: 2vw;
         margin-right: 2vw;
     }
 
     .image-carta-fix {
-        width: 42vw;
-        height: 35vh;
+        width: 46vw;
+        height: 30vh;
     }
 
     .rosa-1, .rosa-2,.rosa-3, .rosa-4,
@@ -1009,7 +1013,7 @@ body {
     .title-carta {
         font-size: 2rem;
         line-height: 6vh;
-        margin: -2vh 2vw 1vh 2vw;
+        margin: -2vh 2vw 4vh 2vw;
     }
 
     .parrafo-time {
@@ -1090,11 +1094,12 @@ body {
     }
 
     .boton-bonus {
-        line-height: 8.5vh;
-        width: 11.5vw;
+        top: 3.5vh;
+        line-height: 4.5vh;
+        width: 12vw;
         min-width: 11.5vw;
-        height: 8vh;
-        min-height: 8vh;
+        height: 7vh;
+        /* min-height: vh; */
     }
 
     .card-bonus {
@@ -1130,7 +1135,11 @@ body {
     }
 
     .carta-bonus {
-        margin-top: -11vh;
+        margin-top: -8vh;
+    }
+
+    .number-five-final {
+        font-size: 5rem;
     }
 }
 
